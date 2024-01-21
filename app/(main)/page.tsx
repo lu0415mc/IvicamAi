@@ -1,21 +1,19 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-
+import Body from "./_components/Body";
+import MainNavbar from "./_components/MainNavbar";
+import Products from "./_components/Products";
+import SecondBody from "./_components/secondBody";
 
 export default function Home() {
+
   return (
-   <div>
-    home page
-    <Button>
-    <Link href="/sign-up">Register</Link>
-
-
-    </Button>
-    <Button>
-
-    <Link href="/sign-in">login</Link>
-    </Button>
+    <>
+      <MainNavbar/>
+    <div className="px-3 md:px-5 lg:px-8">
+      <Body/>
     </div>
+      <Products/>
+      <SecondBody/>
+    </>
 
   );
 }
