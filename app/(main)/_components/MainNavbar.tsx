@@ -4,8 +4,10 @@ import { Button } from "@/components/ui/button";
 import { useUser } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const MainNavbar = () => {
+    const pathname = usePathname()
     const {user} = useUser();
   return (
   <div className="h-12 px-3 md:px-5 lg:px-8 flex items-center w-full bg-white top-0 z-[80] fixed justify-between md:h-14 border-b-2 ">
@@ -17,11 +19,19 @@ const MainNavbar = () => {
     </Link>
 
     <div className="flex gap-5">
-        <Link href="/explore" className="text-#163020">
-        <Button variant="outline">
-            Explore
-        </Button>
-        </Link>
+        {
+            pathname === "/explore" ? (<Link href="/" className="text-#163020">
+                <Button variant="outline">
+                Home
+                </Button>
+                </Link>):(
+                    <Link href="/explore" className="text-#163020">
+                <Button variant="outline">
+                Explore
+                </Button>
+                </Link>
+                
+        )}
         {user ?( <Link href="/Dashboard" className="text-#163020">
         <Button>
             Dashboard

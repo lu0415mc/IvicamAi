@@ -17,7 +17,7 @@ const Body = () => {
     };
   
   return (
-  <div className="wrapper grid grid-cols-1  md:grid-cols-2 gap-5 mt-5 lg:h-[90vh]">
+  <div className="wrapper grid grid-cols-1  md:grid-cols-2 gap-5 pt-20 lg:h-[90vh]">
     <div className="flex flex-col justify-center gap-8">
     <h1 className="font-bold text-3xl md:text-5xl text-[#163020]">Unleashing Intelligent Potential:<p className="text-[#304D30]">Empower Your Business with Cutting-Edge AI SaaS Solutions</p></h1>
      <div className="flex gap-5">
