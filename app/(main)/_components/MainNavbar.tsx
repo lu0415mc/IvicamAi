@@ -8,7 +8,7 @@ import Link from "next/link";
 const MainNavbar = () => {
     const {user} = useUser();
   return (
-  <div className="h-12 px-3 md:px-5 lg:px-8 flex items-center justify-between md:h-14 border-b-2 ">
+  <div className="h-12 px-3 md:px-5 lg:px-8 flex items-center w-full bg-white top-0 z-[80] fixed justify-between md:h-14 border-b-2 ">
     <Link href='/' className="flex md:hidden">
         <Image src="/logo-mobile.png" height={50} width={50} alt="logo"/>
     </Link>
