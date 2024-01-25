@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import{MessageSquareMore, Music, Video} from "lucide-react"
+import{Drama, MessageSquareMore, Music, Video} from "lucide-react"
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 import { UserButton, useUser } from "@clerk/nextjs";
@@ -55,6 +55,14 @@ const Sidebar = () => {
             icon:<MessageSquareMore />,
             href:"/conversation",
             color:"text-orange-700"
+        },
+        {
+            id:6,
+            label:"Face Swap",
+            icon:<Drama />,
+            href:"/faceswap",
+            color:"text-[#0F1035]",
+            bg:"bg-[#0F1035]/10"
         },
     ]
   return (

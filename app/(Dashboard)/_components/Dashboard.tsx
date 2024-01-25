@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import {  Card} from "@/components/ui/card"
-import { ArrowRight, MessageSquareMore, Music, Video } from "lucide-react";
+import { ArrowRight, Drama, MessageSquareMore, Music, Video } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
@@ -51,6 +51,14 @@ const Dashboard = () => {
             href:"/conversation",
             color:"text-orange-700",
             bg:"bg-orange-700/10"
+        },
+        {
+            id:6,
+            label:"Face Swap",
+            icon:<Drama />,
+            href:"/faceswap",
+            color:"text-[#0F1035]",
+            bg:"bg-[#0F1035]/10"
         },
     ]
   return <div className="p-3">
