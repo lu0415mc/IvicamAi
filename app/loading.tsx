@@ -1,4 +1,3 @@
-"use client"
 
 import { Spinner } from '@/components/created_components/spinner'
 import React from 'react'

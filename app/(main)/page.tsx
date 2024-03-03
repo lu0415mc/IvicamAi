@@ -1,18 +1,33 @@
+"use client"
+import { useEffect, useState } from "react";
 import Body from "./_components/Body";
+import ExploreCard from "./_components/ExploreCard";
 import Footer from "./_components/Footer";
 import MainNavbar from "./_components/MainNavbar";
-import Products from "./_components/Products";
+
 import SecondBody from "./_components/secondBody";
+import { ImagesSliderDemo} from "@/components/created_components/Doodle";
 
 export default function Home() {
+    const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  if (!isMounted) {
+    return null
+  }
+
 
   return (
     <>
       <MainNavbar/>
-    <div className="px-3 md:px-5 lg:px-8">
-      <Body/>
+    <div className="bg-black">
+      <ImagesSliderDemo/>
+      {/* <Body/> */}
     </div>
-      <Products/>
+      <ExploreCard/>
       <SecondBody/>
       <Footer/>
     </>

@@ -5,7 +5,8 @@ const nextConfig = {
       "googleusercontent.com",
       "oaidalleapiprodscus.blob.core.windows.net",
       "cdn.openai.com",
-      "replicate.delivery"
+      "replicate.delivery",
+      "img.freepik.com"
     ]
   },
 }
