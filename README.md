@@ -29,7 +29,7 @@ Welcome to IvicamAi, a platform at the forefront of creativity, powered by the l
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/MOHITH-2002/IvicamAi.git .
+git clone https://github.com/slyfox0415/IvicamAi.git .
 ```
 
 ## Environment Variables
